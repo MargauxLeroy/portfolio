@@ -41,12 +41,12 @@ export default (props) => {
                 </div>
                 <ul className={style.rss}>
                     <div>
-                        <a href="https://dribbble.com/MargauxLeroy" onMouseEnter={()=> setPointer({kind: "LINK"})} onMouseLeave={()=> setPointer({})}> <li>Dribbble</li> </a> 
-                        <a href="https://www.pinterest.fr/margauxl94/" onMouseEnter={()=> setPointer({kind: "LINK"})} onMouseLeave={()=> setPointer({})}> <li>Pinterest</li> </a>
+                        <a href="https://dribbble.com/MargauxLeroy" target="_blank" onMouseEnter={()=> setPointer({kind: "LINK"})} onMouseLeave={()=> setPointer({})}> <li>Dribbble</li> </a> 
+                        <a href="https://www.pinterest.fr/margauxl94/" target="_blank" onMouseEnter={()=> setPointer({kind: "LINK"})} onMouseLeave={()=> setPointer({})}> <li>Pinterest</li> </a>
                     </div>
                     <div>
-                        <a href="https://www.linkedin.com/in/margauxleroy/?originalSubdomain=fr" onMouseEnter={()=> setPointer({kind: "LINK"})} onMouseLeave={()=> setPointer({})}> <li>Linkedin</li> </a>                
-                        <a href="https://twitter.com/_MargauxL" onMouseEnter={()=> setPointer({kind: "LINK"})} onMouseLeave={()=> setPointer({})}> <li>Twitter</li> </a>
+                        <a href="https://www.linkedin.com/in/margauxleroy/?originalSubdomain=fr" target="_blank" onMouseEnter={()=> setPointer({kind: "LINK"})} onMouseLeave={()=> setPointer({})}> <li>Linkedin</li> </a>                
+                        <a href="https://twitter.com/_MargauxL" target="_blank" onMouseEnter={()=> setPointer({kind: "LINK"})} onMouseLeave={()=> setPointer({})}> <li>Twitter</li> </a>
                     </div>
                 </ul>
             </div>
