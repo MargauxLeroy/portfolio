@@ -63,7 +63,7 @@
     import LightAndFreeMobile1 from "../../assets/projets/lightandfree/Mobile1.jpg";
     import LightAndFreeFinal from "../../assets/projets/lightandfree/Final.jpg";
 
-    import MintCover from "../../assets/projets/mint/MintCover.png";
+    import MintCover from "../../assets/projets/mint/mintCover.png";
     import MintDesktop1 from "../../assets/projets/mint/Desktop1.png";
     import MintDesktop2 from "../../assets/projets/mint/Desktop2.png";
     import MintDesktop3 from "../../assets/projets/mint/Desktop3.png";
