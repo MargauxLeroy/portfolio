@@ -6,6 +6,7 @@ import { notify } from "../../utils";
 import style from "./style.less";
 //// ASSETS
 import BonjourIcon from "../../../assets/icones/bonjour.svg";
+import MonCV from "../../../assets/cvMargauxLeroy2020.pdf";
 
 
 export default (props) => {
@@ -26,7 +27,7 @@ export default (props) => {
                         Si vous souhaitez collaborer avec moi, n’hésitez pas 
                         à  
                         <a 
-                            download href="../../../assets/cvMargauxLeroy2020.pdf"                 
+                            download href={MonCV}                
                             onMouseEnter={()=> setPointer({kind: "LINK"})} 
                             onMouseLeave={()=> setPointer({})} 
                         > télécharger mon cv 
