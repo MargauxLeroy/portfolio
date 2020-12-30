@@ -27,7 +27,7 @@ export default (props) => {
                         Si vous souhaitez collaborer avec moi, n’hésitez pas 
                         à  
                         <a 
-                            download href={MonCV}                
+                            download="cvMargauxLeroy2021.pdf" href={MonCV}                
                             onMouseEnter={()=> setPointer({kind: "LINK"})} 
                             onMouseLeave={()=> setPointer({})} 
                         > télécharger mon cv 
