@@ -1,0 +1,30 @@
+{
+  "name": "exe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/parcel/bin/cli.js src/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@svgr/parcel-plugin-svgr": "^5.5.0",
+    "autoprefixer": "^9.0.0",
+    "framer-motion": "^2.9.4",
+    "parcel": "^1.12.4",
+    "postcss-modules": "^3.2.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-slick": "^0.27.13",
+    "react-swipe": "^6.0.4",
+    "react-swipeable-views": "^0.13.9",
+    "slick-carousel": "^1.8.1",
+    "swipe-js-iso": "^2.1.5"
+  },
+  "devDependencies": {
+    "less": "^3.12.2"
+  }
+}

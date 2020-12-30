@@ -1,0 +1,163 @@
+// Importation des fichiers CSS partagés
+@import "../../styles/colors.less";
+@import "../../styles/shared.less";
+
+// Création d'un projet secondaire
+.root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+
+    & > div {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        // align-items: center;
+
+        // Spécification d'un projet avec une img portrait
+        width: 150px;
+
+        // Spécification d'un projet avec une img paysage
+        &.landscape {
+            width: 170px;}
+    }
+
+    
+    // Style des titres
+    .titleProjectContainer {
+        grid-column: ~"2/6";
+        grid-row: ~"1/3";
+        line-height: 1.5;
+        position: relative;
+        z-index: 3;
+        cursor: pointer;
+
+        h3 {
+            .titleProject();
+            font-size: 1.2em;
+            padding-top: 0.4em;
+            font-weight: 500;
+            white-space: nowrap;}
+
+        .titleColor {
+            position: absolute;
+            top: 0;
+            overflow: hidden;}
+    } 
+
+        
+
+    // Positionnement & taille de l'image
+    .imgContainer {
+        position: relative;
+        grid-column: ~"3/5";
+        grid-row: ~"2/5";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        > div {
+            background: #545B65;
+            position: absolute;}
+
+        > div:nth-child(1) {
+            top: 0;
+            width: 100%;}
+
+        > div:nth-child(2) {
+            right: 0;
+            height: 100%;}
+
+        > div:nth-child(3) {
+            bottom: 0;
+            width: 100%;}
+
+        > div:nth-child(4) {
+            left: 0;
+            height: 100%;}
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform-origin: 50% 50%;}
+
+    }    
+    
+
+    .date {
+        .dateFont();
+        display: block;
+        width: 100%;
+        font-size: 0.79em;
+        text-align: right;
+        padding-bottom: 0.93em;}
+
+    .line {
+        .line();
+        display: block;
+        width: 100%;
+        border-top: 1px solid @lightgrey;
+        opacity: 0.25;
+        margin-bottom: 0.71em;}
+
+
+
+    // Pastille
+    .wrapperChip {
+        pointer-events: none;
+        position: absolute;
+        z-index: 5; 
+
+        .chip {
+            position: relative; 
+            // transform: translateX(-50%) translateY(-50%);
+            width: 6em;
+            height: 6em;
+
+            div {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+    
+                .polygon, .arrow {
+                    position: absolute;
+                }
+    
+                .polygon {
+                    width: 100%;
+                    height: 100%; }
+    
+                .arrow {
+                    width: 2.4em; }
+            }
+        }
+    }
+
+        
+
+    // Vue Desktop
+    @media screen and (min-width: 1366px) {
+        & > div {
+            // Spécification d'un projet avec une img portrait
+            width: 10em;
+
+            // Spécification d'un projet avec une img paysage
+            &.landscape {
+                width: 14em;
+            }
+        }
+    }
+
+//-- Fermeture root 
+}
+
+
+
+
+

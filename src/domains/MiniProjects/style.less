@@ -1,0 +1,129 @@
+// Importation des fichiers CSS partagés
+@import "../../styles/colors.less";
+@import "../../styles/shared.less";
+
+////////////// PROJETS SECONDAIRES //////////////
+.miniProjects {
+    // Mobile
+    padding: 7em 6% 7em 6%;
+
+    //// Style des titres de section 
+    // Mobile
+    h1 {
+        .sectionTitle();
+        text-align: right;
+        transform: translateX(4%);}
+
+    // Tablette
+    @media screen and (min-width: 680px) {    
+        h1 {
+            .sectionTitle();
+            font-size: 12em;
+            text-align: right;
+            transform: translateX(25%);}
+    }
+
+    // Desktop   
+    @media screen and (min-width: 1036px) {
+        h1 {
+            .sectionTitle();
+            font-size: 17em;
+            text-align: right;
+            transform: translateX(15%);}
+    }
+
+    .wrapperCenter {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        transform: translateY(-3%);
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 4.15fr 2.5fr 1.3fr 0.6fr 6.5fr 0.6fr 1.3fr 2.5fr 4.15fr;
+            column-gap: 2em;
+    
+            // Mini Big Forest
+            & > :first-child {
+                grid-row: ~"1/3";
+                grid-column: ~"3/5";}
+
+            // Humanair
+            & > :nth-child(2) {
+                grid-row: ~"2/4";
+                grid-column: ~"1/3";}
+
+            // Bordeaux 
+            & > :nth-child(3) {
+                grid-row: ~"5/6";
+                grid-column: ~"2/4";}
+
+            // Mint
+            & > :nth-child(4) {
+                grid-row: ~"7/9";
+                grid-column: ~"3/5";}
+
+            // Aysen
+            & > :nth-child(5) {
+                grid-row: ~"8/10";
+                grid-column: ~"1/3";}
+        }
+
+    }
+
+
+    // Tablette
+    @media screen and (min-width: 680px) {
+        padding: 7em 20% 0 20%;
+    }
+
+
+    // Desktop
+    @media screen and (min-width: 1036px) {
+        padding: 7em 12% 7em 12%;
+
+        .wrapperCenter {
+            transform: translateY(-18%);
+
+            .wrapper {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 0.3fr 0.5fr 0.7fr 0.2fr 0.2fr;
+
+            // Mini Big Forest
+            & > :first-child {
+                grid-row: ~"2/5";
+                grid-column: ~"1/2";}
+
+            // Humanair
+            & > :nth-child(2) {
+                grid-row: ~"4/5";
+                grid-column: ~"2/3";}
+
+            // Bordeaux 
+            & > :nth-child(3) {
+                grid-row: ~"1/5";
+                grid-column: ~"3/4";}
+
+            // Mint
+            & > :nth-child(4) {
+                grid-row: ~"2/4";
+                grid-column: ~"4/5";}
+
+            // Aysen
+            & > :nth-child(5) {
+                grid-row: ~"3/5";
+                grid-column: ~"5/6";}
+
+            }
+        }    
+    }
+    
+// \\\\\\\\\\ PROJETS SECONDAIRES \\\\\\\\\\
+}
+
+   
+
+
+

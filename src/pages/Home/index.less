@@ -1,0 +1,127 @@
+// Importation des fichiers CSS partagés
+@import "../../styles/colors.less";
+@import "../../styles/shared.less";
+
+
+////////////////////////// HOMEPAGE //////////////////////////
+.root {
+
+    .page {
+
+        ////////////// GLOBAL //////////////
+        width: 100vw;
+        overflow-x: hidden;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        //// Style des titres de section 
+        // Mobile
+        //Skills
+        & > :nth-child(3) h1 {
+            text-align: left;
+            transform: translateX(-4%);}
+
+        // Tablette
+        @media screen and (min-width: 680px) {    
+            //Skills
+            & > :nth-child(3) h1 {
+                font-size: 12em;
+                text-align: left;
+                transform: translateX(-3%);}
+        }
+
+        // Desktop   
+        @media screen and (min-width: 1036px) {
+            //Skills
+            & > :nth-child(3) h1 {
+                font-size: 17em;
+                text-align: left;
+                transform: translateX(-3%);}
+        }
+
+
+        
+        ////////////// PROJETS PRINCIPAUX //////////////
+        .mainProjects {
+            // Mobile
+            padding-top: 7em;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+
+        ////////////// COMPÉTENCES //////////////
+        .skills {
+            // Mobile
+            padding-bottom: 5em;
+
+            .wrapperMobile {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .line {
+                    .line();
+                    padding-bottom: 1em;}
+        
+                .dots {
+                    text-align: center;
+                    width: 100%;
+                    max-width: 30em;
+                    padding: 0 15%;
+        
+                    .dot {
+                        display: inline-block;
+                        height: 0.5em; 
+                        width: 0.5em; 
+                        border: 1px solid @lightgrey;
+                        border-radius: 50%; 
+                        margin: 0.25em;}
+        
+                    .active {
+                        background-color: @blue;
+                        border: none;}        
+                }   
+            }
+
+            .wrapperDesktop {
+                display: none;}  
+
+
+            // Desktop
+            @media screen and (min-width: 1036px) {
+            
+                .wrapperMobile {
+                    display: none;}
+
+                .wrapperDesktop {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    width: 100%;
+                    padding: 0 5em;
+                    transform: translateY(-15%);}
+            }
+
+
+            // Big Desktop
+            @media screen and (min-width: 1500px) {
+                .wrapperDesktop {
+                    padding: 0 10em;}
+            }
+
+        // \\\\\\\\\\ COMPÉTENCES \\\\\\\\\\
+        }
+
+
+    //\\\\\\\\\\\\\\\\\\\\\\\\ HOMEPAGE \\\\\\\\\\\\\\\\\\\\\\\\\\
+    }
+
+
+
+//\\\\\\\\\\\\\\\\\\\\\\\\ ROOT \\\\\\\\\\\\\\\\\\\\\\\\\\
+}

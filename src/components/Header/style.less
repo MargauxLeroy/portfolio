@@ -1,0 +1,139 @@
+// Importation des fichiers CSS partagés
+@import "../../styles/colors.less";
+
+
+
+// Vue Mobile
+.header {
+    position: absolute;
+    width: 100%;
+    height: 9.28em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: @blue;
+    z-index: 99;
+    // background: transparent linear-gradient(0deg, #545B6500 0%, #545B65 100%) 0% 0% no-repeat padding-box;
+}
+
+
+
+// Vue Desktop
+@media screen and (min-width: 1000px) {
+    .header {
+        height: 11.43em;
+        padding: 0 3.57em;}
+
+    .backHome > svg {
+        display: none;}
+}
+
+
+
+// Gomarfolio : Retour à la page d'accueil
+.backHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    
+    // Texte " Gomarfolio " 
+    > span {
+        // margin-top: 0.21em;
+        font-family: "Apfel Grotezk";
+        font-size: 16px;
+    }
+}
+ 
+
+
+.burgerMenu {
+    transform: translateX(-18%);
+}
+
+.colorMode {
+    transform: translateX(18%);
+}
+
+// Burger Menu & Thème
+.burgerMenu, .colorMode {
+    cursor: pointer;
+
+    > div {
+        position: relative;
+
+        .burgerCircle, .colorCircle {
+            display: block;
+            position: relative;}
+
+        .burgerIcon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;}
+
+        .colorIcon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 0;}
+
+        .burgerSpan {
+            height: 100%;
+            width: 100%;
+
+            > span {
+                position: absolute;
+                overflow: hidden;
+                left: 80%;
+                background-color:#545B65;
+                height: 2em;
+                line-height:2;
+                top: calc(50% - 1em)}
+
+        }
+
+        .colorSpan {
+            height: 100%;
+            width: 100%;
+
+            > span {
+                position: absolute;
+                overflow: hidden;
+                direction: rtl;
+                right: 80%;
+                background-color:#545B65;
+                height: 2em;
+                line-height:2;
+                top: calc(50% - 1em);
+                white-space: nowrap;}
+  
+        }
+    }
+    
+
+    // Positionnement des 3 éléments entre eux
+    & > div > span {
+        width: 6em;
+        height: 6em;
+        position: absolute;
+        top: 0;
+
+        & > svg {
+            font-size: 6em;}
+            
+    }
+
+//-- Fermeture burgerMenu & colorMode 
+}
+ 
+
+
+
+
+
+
+
+

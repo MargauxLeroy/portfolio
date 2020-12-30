@@ -1,0 +1,376 @@
+// Importation des fichiers CSS partagés
+@import "../../styles/colors.less";
+@import "../../styles/shared.less";
+
+
+
+////////////////////////// PAGE PROJET //////////////////////////
+.root {
+    ////////////// GLOBAL //////////////
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    ////////////// ENTÊTE //////////////
+    .headerProject {
+        // Mobile
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 4.3fr 3fr 1fr;
+        grid-template-rows: 13fr 1.5fr 1.5fr 1fr 3.5fr 1fr 1fr 3fr;
+        margin-bottom: 2.5em;
+    
+        .titleProjectContainer {
+            height: 100%;
+            grid-column: ~"2/4";
+            grid-row: ~"2/4";
+            line-height: 1;
+            transform: translateY(calc(-2% - 3.5vw));
+
+            h1 {
+                .titleProject();
+                // line-height: 1;
+                position: relative;
+                z-index: 3;
+                font-size: calc(1.5em + 9vw);
+                font-weight: 500;
+                white-space: nowrap;}
+        }
+        
+        ul {
+            grid-column: ~"2/3";
+            grid-row: ~"5/6";
+        
+    
+            > li {
+                font-family: "IBM Plex Mono";
+                font-style: italic;
+                font-size: 1em;
+                font-weight: 400;
+                line-height: 1.5em;}
+    
+        }
+        
+        .imgContainer {
+            grid-column: ~"1/5";
+            grid-row: ~"1/3";
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;}
+    
+        }
+        
+        .date {
+            .dateFont();
+            grid-column: ~"2";
+            grid-row: ~"7/8";
+            font-size: 1em;}
+   
+        .line {
+            .line();
+            width: 75%;
+            grid-column: ~"2/3";
+            grid-row: ~"6";}
+    
+
+        .discover {
+            display: flex;
+            justify-self: end;
+            grid-column: ~"3/4";
+            grid-row: ~"6/8";
+            font-size: calc(6.5em + 2vw);
+            fill: @lightgrey;
+        }    
+
+        // Desktop
+        @media screen and (min-width: 1036px) {
+            grid-template-columns: 4fr 1fr 3fr 1fr 3fr 1fr;
+            grid-template-rows: 3fr 2fr 1.5fr 2fr 1fr 1fr 1.1fr 1.1fr;
+            margin-bottom: 5em;
+
+            .imgContainer {
+                grid-column: ~"1/4";
+                grid-row: ~"2/8";
+            }
+
+            .titleProjectContainer {
+                grid-column: ~"3/6";
+                grid-row: ~"3/4";}
+    
+            ul {
+                grid-column: ~"5/6";
+                grid-row: ~"4/5";
+                text-align: right;}
+
+            .line {
+                .line();
+                width: 40%;
+                grid-column: ~"5/6";
+                grid-row: ~"4";
+                display: flex;
+                justify-self: end;
+                align-self: end;}
+
+            .date {
+                .dateFont();
+                grid-column: ~"5/6";
+                grid-row: ~"5/6";
+                font-size: 1em;
+                display: flex;
+                justify-self: end;
+                align-self: center;}
+    
+            .discover {
+                grid-column: ~"5/6";
+                grid-row: ~"6/8";
+                display: flex;
+                justify-self: start;
+            }
+        }
+    }
+
+
+    ////////////// DESCRIPTION //////////////
+    .description { 
+        // Mobile
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 3.5em 7%;
+
+        // Desktop
+        @media screen and (min-width: 1036px) {
+            padding: 6.5em 22%;
+        }
+
+        .wrapper {
+            max-width: 48em;
+
+            h3 {
+                font-family: "Apfel Grotezk";
+                text-align: center;
+                font-size: 2.85em;
+                font-weight: 300;
+                color: @grey;
+                letter-spacing: -0.021em;
+                padding-bottom: 0.8em;}
+
+            p {
+                color: @grey;
+                font-size: 1.1em;
+                font-weight: 300;
+                line-height: 2.3em;
+                padding-bottom: 0.8em;
+                
+                span {
+                    color: @grey;
+                    font-weight: 700;
+                }
+            }
+
+            .trait {
+                .line();
+                margin-top: 8px;
+                margin-bottom: 20px; 
+            }
+
+            a {
+                font-weight: 600;
+                color: @lightgrey;}
+                
+            a:hover {
+                color: @hoverblue;
+            }    
+
+        }
+
+    }
+
+
+    ////////////// IMAGES X3 //////////////
+    .threeImgs {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+        padding: 3.5em 7%;
+
+        > img {
+            width: 100%;
+            flex: 33%;
+            padding: 0 3px;
+        }
+
+        // Desktop 
+        @media screen and (min-width: 1036px) {
+            padding: 6.5em 17%;
+        }
+
+    }
+
+
+    ////////////// IMAGE REGULAR //////////////
+    .imgRegular {
+        width: 100%;
+
+        // Desktop
+        @media screen and (min-width: 1036px) {
+            padding: 0em 17%;
+        }
+
+        .wrapper {
+            display: flex;
+
+            > img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    ////////////// IMAGE FULL //////////////
+    .imgFull {
+        width: 100%;
+
+        .wrapper {
+            display: flex;
+
+            > img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+    
+
+    ////////////// VIDEO REGULAR //////////////
+    .videoRegular {
+        width: 100%;
+        
+        // Desktop
+        @media screen and (min-width: 1036px) {
+            padding: 0em 17%;
+        }
+
+    }
+
+
+    ////////////// ADRESSE DU SITE STYLISÉ //////////////
+    .siteLink {
+        height: calc(18em + 35vw);
+        background-color: #D9D8D8;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: calc(5em + 3vw) 0;
+        cursor: pointer;
+
+        h3 {
+            font-family: "Apfel Grotezk";
+            font-weight: 500;
+            font-size: calc(1.8em + 5vw);
+            color: @white;
+            text-decoration: none;
+        }
+
+        h4 {
+            font-family: "IBM Plex Mono";
+            font-weight: 500;
+            font-size: 0.85em;
+            color: @darkgrey;
+            background-color: @white;
+            padding: 12px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+
+        // Desktop
+        @media screen and (min-width: 1036px) {
+            margin-top: 20em;
+        }
+
+    }
+
+    
+    ////////////// REDIRECTION VERS LES AUTRES PROJETS //////////////
+    .otherProjects {
+        justify-content: center;
+        padding: calc(2.5em + 10vw) 0;
+
+
+        .discover {
+            display: flex;
+            justify-self: end;
+            grid-column: ~"3/4";
+            grid-row: ~"6/8";
+            font-size: calc(5.5em + 2vw);
+            fill: @lightgrey;
+            margin-bottom: 35px;
+        }    
+
+        .disabled h2 {
+            cursor: not-allowed;
+        }
+
+        > div {
+            display: flex;
+            justify-content: center;
+
+            > span {
+                font-size: calc(1em + 1vw);
+                transform: translateY(35%); }
+
+            > div {
+                display: grid;
+                align-items: center;
+                height: calc(3em + 4vw);
+                position: relative;
+
+                > * {
+                    padding: 8px calc(5px + 1vw); }
+    
+                > h2 {
+                    z-index: 999;
+                    grid-row: 1;
+                    grid-column: ~"1/4"; 
+                    font-family: "Apfel Grotezk";
+                    font-weight: 400;
+                    font-size: calc(1.6em + 3vw);
+                    cursor: pointer; }  
+                    
+                > div {
+                    grid-row: 1;
+                    grid-column: ~"1/4"; 
+                    position: absolute;
+
+                    > img.portrait {
+                        height: 250px;
+                    }
+
+                    > img.landscape {
+                        height: 150px;
+                    }
+                }
+
+                > div.right {
+                    right: 0;
+                    transform: translate(45%, 7%);
+                }
+
+                > div.left {
+                    left: 0;
+                    transform: translate(-35%, 7%);
+                }
+            }
+        }
+    }
+
+
+//\\\\\\\\\\\\\\\\\\\\\\\\ PROJECT PAGE \\\\\\\\\\\\\\\\\\\\\\\\\\
+}

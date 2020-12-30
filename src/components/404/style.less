@@ -1,0 +1,52 @@
+@import "../../styles/colors.less";
+@import "../../styles/shared.less";
+
+
+.errorSection {
+    width: 100%;
+    height: 100vh;
+    padding: 0 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > h1 {
+        font-family: "Apfel Grotezk";
+        font-size: 19em;
+        color: @opacity;
+        position: absolute;
+        top: 15%;
+    }
+
+    // Desktop
+    @media screen and (min-width: 1036px) {
+
+        > h1 {
+            font-size: 30em;
+        }  
+
+        > div {
+            margin-top: 10em;
+        }
+    }
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+
+        > h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    
+        > span {
+            width: 120px;
+            .line();
+        }
+    }
+
+}

@@ -1,0 +1,129 @@
+@import "../../styles/colors.less";
+@import "../../styles/shared.less";
+
+
+
+/*Vue Mobile*/
+.footer {
+    background-color: @opacity;
+    background-image: url("../../../assets/imgs/self.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    @color: @lightgrey;
+    // font-size: 14px;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0.0143em;
+    padding: 3.57em;
+
+
+    // Partie haute du footer
+    .surFooter {
+
+        .description {
+            max-width: 32em;
+
+            .icon {
+                padding-bottom: 1.79em;
+            }
+
+            p {
+            line-height: 2em;
+
+                .mail {
+                    .lien();
+                    cursor: pointer;
+                }
+
+                .mail:hover {
+                    color: #3F97FD;
+                }
+                
+            }
+        }
+
+        .rss {
+            display: flex;
+            justify-content: right;
+            text-align: right;
+            padding: 4em 0 2.14em 0;
+    
+            li {
+                font-family: "IBM Plex Mono";
+                font-weight: 400;
+                padding-bottom: 0.79em;
+                padding-left: 2.5em;
+            }
+        }
+
+    }
+
+
+    .line {
+        .line();
+    }
+
+
+    // Partie basse du footer
+    .sousFooter {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1.2em;
+        opacity: 0.7;
+
+        .credits {
+            .lien();
+            font-weight: 500;
+            color: @lightgrey;
+        }
+
+        .credits:hover {
+            color: #3F97FD;
+        }
+    }
+
+
+}
+
+/*Vue Tablette*/
+@media screen and (min-width: 680px) {
+
+    .footer {
+        padding: 8em;
+
+        .surFooter {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding-bottom: 3.5em;
+    
+            .rss {
+                display: block;
+                padding: 0;
+                transform: translateY(6%);
+            }
+        }
+    }
+
+}
+
+/*Vue Desktop*/
+@media screen and (min-width: 1000px) {
+
+    .footer {
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+
+}
+
+/*Vue Grand Écran*/
+@media screen and (min-width: 1600px) {
+
+    .footer {
+        padding-left: 15em;
+        padding-right: 15em;
+    }
+
+
+}

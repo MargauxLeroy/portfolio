@@ -1,0 +1,62 @@
+// Importation des fichiers CSS partagés
+@import "../../styles/colors.less";
+@import "../../styles/shared.less";
+
+.root {
+    width: 100%;
+    min-width: 5em;
+    min-height: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20%;
+    
+    .icon {
+        color: @blue;
+        padding-bottom: 1em;
+    }
+
+    .title {
+        font-family: "IBM Plex Mono";
+        font-size: 1.1em;
+        font-weight: 500;
+        letter-spacing: -0.0286em;
+        color: @blue;
+        padding-bottom: 1em;
+    }
+
+    .description {
+        color: @white;
+        max-width: 30em;
+        text-align: center;
+        font-size: 0.9em;
+        letter-spacing: 0.0143em;
+        line-height: 1.86;
+        padding-bottom: 1.5em;
+
+    }
+
+    @media screen and (min-width: 1036px) {
+        flex-basis: 30%;
+        padding: 0 2.5em 4em 2.5em;
+
+        .description {
+            min-width: 20em;
+            max-width: 22em;
+            flex: 0 2em;
+        }
+
+        .line {
+            width: 100%;
+        }
+    }
+
+}
+
+
+
+
+
+
+        
+ 
