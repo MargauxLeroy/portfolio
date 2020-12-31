@@ -20,7 +20,7 @@ import Skill from "../../domains/Skill";
 // Images
 import Dfly from "../../../assets/projets/dfly/dflyCover.png";
 import Bhangara from "../../../assets/projets/bhangara/bhangaraCover.jpg";
-import Mobidys from "../../../assets/projets/mobidys/mobidysCoverLocked.png";
+import Mobidys from "../../../assets/projets/mobidys/mobidysCoverLocked.jpg";
 // Icônes
 import AnalyseDeBesoin from "../../../assets/icones/analysis.svg";
 

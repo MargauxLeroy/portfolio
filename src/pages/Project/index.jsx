@@ -8,7 +8,7 @@ import style from "./style.less";
 // Images
 import Dfly from "../../../assets/projets/dfly/dflyCover.png";
 import Bhangara from "../../../assets/projets/bhangara/bhangaraCover.jpg";
-import Mobidys from "../../../assets/projets/mobidys/mobidysCoverLocked.png";
+import Mobidys from "../../../assets/projets/mobidys/mobidysCoverLocked.jpg";
 import MiniBigForest from "../../../assets/projets/mbf/minibigforestMiniCover.png";
 import Humanair from "../../../assets/projets/humanair/humanairMiniCover.png";
 import Bordeaux from "../../../assets/projets/bordeaux/bordeauxMiniCoverLocked.png";
