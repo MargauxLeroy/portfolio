@@ -6,7 +6,7 @@ import { notify } from "../../utils";
 import style from "./style.less";
 //// ASSETS
 import BonjourIcon from "../../../assets/icones/bonjour.svg";
-import MonCV from "../../../assets/cvMargauxLeroy2020.pdf";
+import MonCV from "../../../assets/cvMargauxLeroy2021.pdf";
 
 
 export default (props) => {
