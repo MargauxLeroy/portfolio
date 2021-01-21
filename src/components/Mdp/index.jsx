@@ -10,6 +10,7 @@ import Locked from "./../../../assets/icones/locked.svg";
 
 export default (props) => {
     const setPointer = props.setPointer;
+    const history = props.history;
 
     const [displayError, setDisplayError] = useState(false);
 
@@ -32,6 +33,9 @@ export default (props) => {
                 </div>
                 <div className={style.submit}>
                     <input onClick={ () => setDisplayError(true) } onMouseEnter={()=> setPointer({kind: "LINK"})} onMouseLeave={()=> setPointer({})} type="submit" value="Accéder au projet"/>
+                </div>
+                <div className={style.backhome}>
+                    <a setPointer={setPointer} onClick={() => {history.push("/")}}>Retour à la homepage</a>
                 </div>
         </section>            
     )
