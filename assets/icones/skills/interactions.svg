@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57.1" height="52" viewBox="0 0 57.1 22.103">
+  <g id="Icn_Interaction" data-name="Icn/Interaction" transform="translate(-957 -3712)">
+    <path id="Tracé_75" data-name="Tracé 75" d="M9.431,11.1a.431.431,0,0,1-.28-.117L6.345,8.18,4.217,10.319a.412.412,0,0,1-.362.106.373.373,0,0,1-.28-.246L.02.523A.406.406,0,0,1,.114.114.406.406,0,0,1,.523.02L10.18,3.574a.373.373,0,0,1,.245.281.412.412,0,0,1-.105.362L8.181,6.345l2.805,2.8a.388.388,0,0,1,0,.549h0L9.7,10.986a.383.383,0,0,1-.269.117" transform="translate(1003 3723)" fill="#8eb4e0"/>
+    <g id="Rectangle_332" data-name="Rectangle 332" transform="translate(957 3712)" fill="none" stroke="#8eb4e0" stroke-width="1.5">
+      <rect width="57" height="17" rx="8.5" stroke="none"/>
+      <rect x="0.75" y="0.75" width="55.5" height="15.5" rx="7.75" fill="none"/>
+    </g>
+    <line id="Ligne_32" data-name="Ligne 32" x2="19" transform="translate(968.5 3720.5)" fill="none" stroke="#8eb4e0" stroke-linecap="round" stroke-width="1"/>
+  </g>
+</svg>

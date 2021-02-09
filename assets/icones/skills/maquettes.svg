@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57" height="52" viewBox="0 0 57 35">
+  <g id="IcnProvisoire_Wireframing" data-name="IcnProvisoire/Wireframing" transform="translate(-916 -3977.318)">
+    <g id="Rectangle_316" data-name="Rectangle 316" transform="translate(916 3977.318)" fill="none" stroke="#8eb4e0" stroke-width="1.5">
+      <rect width="57" height="35" rx="1" stroke="none"/>
+      <rect x="0.75" y="0.75" width="55.5" height="33.5" rx="0.25" fill="none"/>
+    </g>
+    <g id="Groupe_56" data-name="Groupe 56" transform="translate(3 2)">
+      <path id="Tracé_47" data-name="Tracé 47" d="M-6889.117,3988.572h11.668" transform="translate(7810.486 2.186)" fill="none" stroke="#8eb4e0" stroke-linecap="round" stroke-width="1"/>
+      <path id="Tracé_76" data-name="Tracé 76" d="M-6889.117,3988.572h11.668" transform="translate(7810.486 -1.396)" fill="none" stroke="#8eb4e0" stroke-linecap="round" stroke-width="1"/>
+      <path id="Tracé_49" data-name="Tracé 49" d="M-6889.117,3988.572h11.668" transform="translate(7810.486 5.991)" fill="none" stroke="#8eb4e0" stroke-linecap="round" stroke-width="1"/>
+      <path id="Tracé_50" data-name="Tracé 50" d="M-6889.117,3988.572h11.668" transform="translate(7810.486 9.711)" fill="none" stroke="#8eb4e0" stroke-linecap="round" stroke-width="1"/>
+    </g>
+    <g id="Groupe_55" data-name="Groupe 55" transform="translate(-5 -3)">
+      <g id="Rectangle_334" data-name="Rectangle 334" transform="translate(948 3989.318)" fill="none" stroke="#8eb4e0" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+        <rect width="21" height="17" rx="1" stroke="none"/>
+        <rect x="0.5" y="0.5" width="20" height="16" rx="0.5" fill="none"/>
+      </g>
+      <path id="Tracé_77" data-name="Tracé 77" d="M958.249,3988.208,938.43,4003.14" transform="translate(10.172 1.975)" fill="none" stroke="#8eb4e0" stroke-width="1"/>
+      <path id="Tracé_78" data-name="Tracé 78" d="M939,3988.208l19.819,15.359" transform="translate(9.602 1.975)" fill="none" stroke="#8eb4e0" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

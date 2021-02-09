@@ -22,7 +22,12 @@ import Dfly from "../../../assets/projets/dfly/dflyCover.png";
 import Bhangara from "../../../assets/projets/bhangara/bhangaraCover.jpg";
 import Mobidys from "../../../assets/projets/mobidys/mobidysCover.png";
 // Icônes
-import AnalyseDeBesoin from "../../../assets/icones/analysis.svg";
+import AnalyseDeBesoin from "../../../assets/icones/skills/analysis.svg";
+import Recherche from "../../../assets/icones/skills/user.svg";
+import Wireframes from "../../../assets/icones/skills/structure.svg";
+import Maquettes from "../../../assets/icones/skills/maquettes.svg";
+import Prototype from "../../../assets/icones/skills/prototype.svg";
+import Interactions from "../../../assets/icones/skills/interactions.svg";
 
 
 /////// SETUP SLIDER MOBILE (Skills)
@@ -39,38 +44,32 @@ export default (props) => {
         {
             icon: <AnalyseDeBesoin/>,
             title: "Analyse de besoin",
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Donec nec mauris eget nibh ultricies.`,
+            description: `Contextualisation et positionnement, définition d'une problématique et d'une cible d'utilisateurs`,
         },
         {
-            icon: <AnalyseDeBesoin/>,
-            title: "Recherche & Conception",
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Donec nec mauris eget nibh ultricies.`,
+            icon: <Recherche/>,
+            title: "Recherche",
+            description: `Documentation, veille concurrentielle, personaes, entretiens utilisateurs et définition des fonctionnalités`,
         },
         {
-            icon: <AnalyseDeBesoin/>,
-            title: "Wireframing",
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Donec nec mauris eget nibh ultricies.`,
+            icon: <Wireframes/>,
+            title: "Conception",
+            description: `Ateliers de co-conception, brainstorming, création d'arborescence et d'un parcours utilisateurs, wireframes`,
         },
         {
-            icon: <AnalyseDeBesoin/>,
-            title: "Maquettes",
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Donec nec mauris eget nibh ultricies.`,
+            icon: <Maquettes/>,
+            title: "Réalisation",
+            description: `Réalisation de moodboard, charte graphique, iconographie, maquettes graphiques, UI Kit, design system,...`,
         },
         {
-            icon: <AnalyseDeBesoin/>,
-            title: "Prototypage",
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Donec nec mauris eget nibh ultricies.`,
-        },
-        {
-            icon: <AnalyseDeBesoin/>,
+            icon: <Interactions/>,
             title: "Interactions",
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Donec nec mauris eget nibh ultricies.`
+            description: `Ajout d'animations, micro-interactions, transitions,… pour l'apport de dynamisme et d'un feedback pour l’utilisateur`
+        },
+        {
+            icon: <Prototype/>,
+            title: "Prototypage",
+            description: `Création de prototype pour évaluer et anticiper les limites par des utilisateurs potentiels avant développement`,
         },
     ];
 
@@ -92,7 +91,7 @@ export default (props) => {
                     </div>
                 </section>
                 <MiniProjects setPointer={setPointer} history={history}/>
-                {/* <section className={style.skills}>
+                <section className={style.skills}>
                     <h1 className={style.sectionTitle}>Skills</h1>
                     <div className={style.wrapperMobile}>
                         <VirtualizeSwipeableViews slideRenderer={({key, index}) => {
@@ -109,7 +108,7 @@ export default (props) => {
                     <div className={style.wrapperDesktop}>
                         {slides.map((slide, index) => <Skill line key={index} icon={slide.icon} title={slide.title} description={slide.description}/>)}
                     </div>
-                </section> */}
+                </section>
             </div>
         </div> 
     );

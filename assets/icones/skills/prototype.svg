@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="52" viewBox="0 0 42 36">
+  <g id="Icn_Proto" data-name="Icn/Proto" transform="translate(-729 -3889)">
+    <g id="Polygone_8" data-name="Polygone 8" transform="translate(732 3891)" fill="none">
+      <path d="M17.641,1.439a1,1,0,0,1,1.717,0L36.1,29.488A1,1,0,0,1,35.239,31H1.761A1,1,0,0,1,.9,29.488Z" stroke="none"/>
+      <path d="M 18.49999618530273 2.927074432373047 L 2.641956329345703 29.50000381469727 L 34.3580322265625 29.50000381469727 L 18.49999618530273 2.927074432373047 M 18.49999618530273 0.9513797760009766 C 18.83236885070801 0.9513797760009766 19.16474151611328 1.113893508911133 19.35871124267578 1.438924789428711 L 36.0974006652832 29.48754501342773 C 36.49519348144531 30.15410423278809 36.01492309570312 31.00000381469727 35.23869323730469 31.00000381469727 L 1.761302947998047 31.00000381469727 C 0.9850730895996094 31.00000381469727 0.5048103332519531 30.15410423278809 0.9025917053222656 29.48754501342773 L 17.64128112792969 1.438924789428711 C 17.83525276184082 1.113893508911133 18.16762351989746 0.9513797760009766 18.49999618530273 0.9513797760009766 Z" stroke="none" fill="#8eb4e0"/>
+    </g>
+    <g id="Groupe_57" data-name="Groupe 57" transform="translate(729 3889)">
+      <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(0 28)" fill="#545b65" stroke="#8eb4e0" stroke-width="1.5">
+        <circle cx="4" cy="4" r="4" stroke="none"/>
+        <circle cx="4" cy="4" r="3.25" fill="none"/>
+      </g>
+      <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(34 28)" fill="#545b65" stroke="#8eb4e0" stroke-width="1.5">
+        <circle cx="4" cy="4" r="4" stroke="none"/>
+        <circle cx="4" cy="4" r="3.25" fill="none"/>
+      </g>
+      <g id="Ellipse_8" data-name="Ellipse 8" transform="translate(17 0)" fill="#545b65" stroke="#8eb4e0" stroke-width="1.5">
+        <circle cx="4" cy="4" r="4" stroke="none"/>
+        <circle cx="4" cy="4" r="3.25" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
