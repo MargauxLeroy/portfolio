@@ -8,7 +8,7 @@ import style from "./style.less";
 // Images
 import Dfly from "../../../assets/projets/dfly/dflyCover.png";
 import Bhangara from "../../../assets/projets/bhangara/bhangaraCover.jpg";
-import Mobidys from "../../../assets/projets/mobidys/mobidysCoverLocked.jpg";
+import Mobidys from "../../../assets/projets/mobidys/mobidysCover.png";
 import MiniBigForest from "../../../assets/projets/mbf/minibigforestMiniCover.png";
 import Humanair from "../../../assets/projets/humanair/humanairMiniCover.png";
 import Bordeaux from "../../../assets/projets/bordeaux/bordeauxMiniCoverLocked.png";
@@ -356,7 +356,7 @@ export default (props) => {
                 <NextProject 
                     history={history}
                     setPointer={setPointer} 
-                    projectId="/mdp"
+                    projectId="mobidys"
                     title="Mobidys" 
                     img={Mobidys} 
                     titleVariants={titleVariants} 

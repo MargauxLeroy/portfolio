@@ -20,7 +20,7 @@ import Skill from "../../domains/Skill";
 // Images
 import Dfly from "../../../assets/projets/dfly/dflyCover.png";
 import Bhangara from "../../../assets/projets/bhangara/bhangaraCover.jpg";
-import Mobidys from "../../../assets/projets/mobidys/mobidysCoverLocked.jpg";
+import Mobidys from "../../../assets/projets/mobidys/mobidysCover.png";
 // Icônes
 import AnalyseDeBesoin from "../../../assets/icones/analysis.svg";
 
@@ -88,7 +88,7 @@ export default (props) => {
                         <MainProject setPointer={setPointer} onClick={() => {history.push("/project/bhangara")}} color="#BEEF39" fill="#BEEF39" reversed title="Bhangara" img={Bhangara} tags={["site web", "ecommerce", "nepal", "chanvre"]} date="2020"/>
                     </div>
                     <div className={style.mainProjectContainer}>
-                        <MainProject setPointer={setPointer} onClick={() => {history.push("/mdp")}} color="#E57F20" fill="#E57F20" title="Mobidys" img={Mobidys} tags={["application", "back-office", "e-learning", "dyslexie"]} date="2020"/>
+                        <MainProject setPointer={setPointer} onClick={() => {history.push("/project/mobidys")}} color="#E57F20" fill="#E57F20" title="Mobidys" img={Mobidys} tags={["application", "back-office", "e-learning", "dyslexie"]} date="2020"/>
                     </div>
                 </section>
                 <MiniProjects setPointer={setPointer} history={history}/>

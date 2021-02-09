@@ -32,6 +32,16 @@ import BhangaraDesktop1 from "../../assets/projets/bhangara/Desktop1.png";
 import BhangaraImg1 from "../../assets/projets/bhangara/Img1.jpg";
 import BhangaraLogo from "../../assets/projets/bhangara/Logo.png";
 import BhangaraFinal from "../../assets/projets/bhangara/Final.jpg";
+// MOBIDYS
+import MobidysCover from "../../assets/projets/mobidys/mobidysCover.png";
+import Mobidys1 from "../../assets/projets/mobidys/1.jpg";
+import Mobidys2 from "../../assets/projets/mobidys/2.jpg";
+import Mobidys3 from "../../assets/projets/mobidys/3.jpg";
+import MobidysDesktop1 from "../../assets/projets/mobidys/Desktop1.png";
+import MobidysDesktop2 from "../../assets/projets/mobidys/Desktop2.png";
+import MobidysDesktop3 from "../../assets/projets/mobidys/Desktop3.png";
+import MobidysDesktop4 from "../../assets/projets/mobidys/Desktop4.png";
+import MobidysLogo from "../../assets/projets/mobidys/Logo.png";
 //MINI BIG FOREST
 import MiniBigForestCover from "../../assets/projets/mbf/minibigforestCover.jpg";
 import MiniBigForest1 from "../../assets/projets/mbf/1.jpg";
@@ -297,6 +307,111 @@ export default {
             
         ]
 
+    },
+
+
+    /////// MOBIDYS
+    mobidys: {
+        title: "Mobidys",
+        imgCover: MobidysCover,
+        date: "2020",
+        tags: ["application", "back-office", "e-learning", "dyslexie"],
+        color: "#E57F20", 
+
+        customContent : [
+            {
+                kind: "description",
+                props: {
+                    title: "Une entreprise Nantaise engagée",
+                    text: <p>MOBiDYS est une entreprise nantaise développant une offre de livres adaptés pour répondre aux attentes 
+                    des dyslexiques. Ils travaillent en collaboration avec des orthophonistes et des enfants en difficulté d’apprentissage 
+                    afin de construire avec eux des solutions adaptées à leurs besoins.
+                    Grâce au numérique, ils réalisent des livres interactifs et personnalisables, enrichis au moyen d’une multitude d’outils 
+                    d’aide à la lecture. Ils permettent ainsi à chaque lecteur de disposer d’une combinaison modulable d’outils de lecture 
+                    précisément adaptés à ses difficultés.
+                    Qu'ils soient audio, numériques ou papier, leurs livres, adaptés d'œuvres existantes, permettent de soulager l’effort de 
+                    lecture et de libérer le cerveau du lecteur, afin que son attention soit portée au sens plutôt qu’au décodage.
+                    </p>, 
+                    info: <a href="https://www.mobidys.com/" target="_blank">@ Mobidys</a>
+                }
+            },
+            {
+                kind: "threeImgs",
+                props: {
+                    img1: Mobidys1,
+                    img2: Mobidys2,
+                    img3: Mobidys3,
+                }
+            },
+            {
+                kind: "description",
+                props: {
+                    title: "Faciliter la méthode de travail",
+                    text: <p>Afin de réaliser leurs livres numériques, l'équipe de Mobidys doit manuellement enrichir le texte avec 
+                    l'ajout de définitions, définir la syllabation, etc. Leur processus est assez fragmenté car plusieurs personnes 
+                    sont nécessaires à l'ajout des différents enrichissements et jusqu'à présent, ces derniers étaient intégrés dans 
+                    des tableurs : cela prend du temps, est peu intuitif et peut engendrer des erreurs de saisie.
+                    Mobidys a exprimé le besoin d'industrialiser le processus d'édition pour pouvoir réduire drastiquement le temps 
+                    et donc le coût nécessaire à l'enrichissement d'un livre. La création d'une plateforme d'édition spécialisée a 
+                    été convenue afin de centraliser et d'automatiser certains processus.</p>, 
+                }
+            },
+            {
+                kind: "imgRegular",
+                props: {
+                    img: MobidysDesktop2
+                }
+            },      
+            {
+                kind: "description",
+                props: {
+                    title: "Création de la plateforme",
+                    text: <p>Pour créer ce nouvel outil, il a été primordial de déterminer les différents acteurs et leurs méthodologies, 
+                    lister les fonctionnalités nécessaires et les possibilités d'améliorations par rapport à l'existant pour pouvoir réaliser 
+                    des interfaces ergonomiques et facile à prendre en main pour tous les utilisateurs, pas forcément à l'aise avec le numérique. 
+                    Avant d'arriver à des solutions satisfaisantes, il a fallu bien comprendre et définir le périmètre de chaque demande : 
+                    nous avons exploré et testé plusieurs possibilités avec des prototypes avant de valider chaque mode et fonctionnalités. 
+                    Afin d'éviter les erreurs, il a également été nécessaire de limiter certaines interactions et d'inciter des bonnes pratiques, 
+                    surtout qu'un livre doit pouvoir être éditable par plusieurs personnes en simultanée et implique donc des contraintes 
+                    techniques fortes.</p>, 
+                }
+            },
+            {
+                kind: "imgRegular",
+                props: {
+                    img: MobidysLogo
+                }
+            },
+            {
+                kind: "imgRegular",
+                props: {
+                    img: MobidysDesktop3
+                }
+            },
+            {
+                kind: "description",
+                props: {
+                    title: "Un outil polyvalent",
+                    text: <p>La plateforme comporte un dashboard permettant d'importer un livre et regroupant les différents livres enrichis 
+                    ou en cours d'édition avec la possibilité d'assignation aux personnes concernées. 
+                    La partie principale de la plateforme est l'édition et l'enrichissement du texte comportant différents modes et menus 
+                    adaptés à chaque besoin : mode aperçu, mode mise en page, mode définitions, mode syllabation, etc.</p>, 
+                }
+            },  
+            {
+                kind: "imgRegular",
+                props: {
+                    img: MobidysDesktop1
+                }
+            },     
+            {
+                kind: "imgRegular",
+                props: {
+                    img: MobidysDesktop4
+                }
+            },
+
+        ]
     },
 
 
